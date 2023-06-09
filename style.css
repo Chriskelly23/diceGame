@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+   
+}
+
+main {
+    position: relative;
+    width: 100rem;
+    height: 60rem;
+    background-color: black;
+    border-radius: 9px;
+    overflow: hidden;
+    display: flex;
+}
+
+.player {
+    flex: 50%;
+    padding: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.75s;
+}
+
+.name {
+    position: relative;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.score {
+    font-size: 100px;
+    color: black;
+    margin-bottom: auto;
+}
+
+.player--active {
+    background-color: grey;
+}
+
+.current {
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: white;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
+}
+
+.current-label {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+
+.current-score {
+    font-size: 100px;   
+}
+
+.btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: grey;
+    font-family: inherit;
+    font-size: 36px;    
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: black
+   
+   
+}
+
+
+.btn--new {
+    top: 40px;
+}
+
+.btn--roll {
+    top: 350px;
+}
+
+.btn--hold {
+    top: 46.1rem;
+}
+
+.btn:active {
+    transform: translate(-50%, 3px);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 16.5rem;
+    transform: translateX(-50%);   
+}
+
+.player--winner {
+    background-color: #2f2f2f;
+}
+
+.player--winner .name {
+    font-optical-sizing: 2rem;  
+    font-size: 35px;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
